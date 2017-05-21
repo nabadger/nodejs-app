@@ -15,6 +15,7 @@ read them back out. Rows are deleted when the row-count goes above 50 entries.
 * https://github.com/TheNewNormal/kube-solo-osx
 * https://github.com/kubernetes/kubernetes/tree/master/examples/cockroachdb
 * https://github.com/sequelize/express-example
+* https://groundberry.github.io/development/2016/11/04/build-your-node-app-with-express-and-sequelize.html
 
 ## Prerequisites
 A kubernetes cluster! I developed this against both minikube and kube-solo.
