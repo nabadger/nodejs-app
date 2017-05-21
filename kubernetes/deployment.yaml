@@ -23,5 +23,5 @@ spec:
           value: "kubetest"
         - name: DB_USER
           value: "kubetest"
-        - name: DB_PORT
+        - name: DB_PASSWD
           value: ""
