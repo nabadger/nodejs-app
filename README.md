@@ -50,6 +50,12 @@ kubectl describe svc/simple-node-server
 
 You should be able to browse to this.
 
+### Helper scripts 
+
+There's a couple of helper scripts [here](https://github.com/nabadger/simple-kube-stack/tree/master/scripts).
+
+Used for building the docker image and applying any kubernetes changes to the deployment or service scripts.
+
 # TODO
 
 * Configure db-connection details via deployment.yaml
