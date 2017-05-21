@@ -57,9 +57,6 @@ There's a couple of helper scripts [here](https://github.com/nabadger/simple-kub
 Used for building the docker image and applying any kubernetes changes to the deployment or service scripts.
 
 # TODO
-
-* Configure db-connection details via deployment.yaml
-* Configure for dev vs production style environments 
 * Test versioning / rolling-updates / rollback
 * Test db migrations
 * Helper script to kill pods and check resiliency
