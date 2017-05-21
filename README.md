@@ -33,6 +33,8 @@ For this app, use docker to build the image:
 ```
 docker build -t simple-node-server:v1 .
 ```
+Update kubernetes/deployment.yaml and configure your database connection info.
+These are passed into the container as environment vars.
 
 Deploy into kubernetes cluster:
 ```
