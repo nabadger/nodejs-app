@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
       models.User.destroy({truncate:true});
   });
 
-  // Fetch all instances and deploy them to the user
+  // Fetch all instances and display them
   models.User.findAll().then(function(users) {
     res.render('index', {
       title: 'Simple node server with cockroach-db backend',
