@@ -58,6 +58,6 @@ Used for building the docker image and applying any kubernetes changes to the de
 
 # TODO
 * Test versioning / rolling-updates / rollback
-* Helper script to set replica
+* Set replica's to 3
 * Helper script to kill pods and check resiliency
 * Tidy up project structure
