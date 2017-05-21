@@ -36,6 +36,20 @@ docker build -t simple-node-server:v1 .
 Update kubernetes/deployment.yaml and configure your database connection info.
 These are passed into the container as environment vars.
 
+```
+ env:
+  - name: DB_HOST
+    value: "cockroachdb-public"
+  - name: DB_PORT
+    value: "26257"
+  - name: DB_NAME
+    value: "kubetest"
+  - name: DB_USER
+    value: "kubetest"
+  - name: DB_PORT
+    value: ""
+```
+
 Deploy into kubernetes cluster:
 ```
 kubectl create -f kubernetes/deployment.yaml
@@ -57,6 +71,7 @@ There's a couple of helper scripts [here](https://github.com/nabadger/simple-kub
 Used for building the docker image and applying any kubernetes changes to the deployment or service scripts.
 
 # TODO
+* Use kubernetes secrets
 * Test versioning / rolling-updates / rollback
 * Set replica's to 3
 * Helper script to kill pods and check resiliency
