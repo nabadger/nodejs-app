@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p This is a sample web-server using node/coachbase in a kubernetes environ
+  p userlisting...
+  each user in users
+    li=user.username 

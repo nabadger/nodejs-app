@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "kubetest",
+    "password": null,
+    "database": "kubetest",
+    "host": "192.168.99.100",
+    "dialect": "postgres",
+	"port": 30638
+  },
+  "test": {
+    "username": "kubetest",
+    "password": null,
+    "database": "kubetest",
+    "host": "192.168.99.100",
+    "dialect": "postgres",
+	"port": 30638
+  },
+  "production": {
+    "username": "kubetest",
+    "password": null,
+    "database": "kubetest",
+    "host": "192.168.99.100",
+    "dialect": "postgres",
+	"port": 30638
+  }
+}
+
