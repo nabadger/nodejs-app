@@ -49,5 +49,9 @@ You should be able to browse to this.
 
 # TODO
 
-* Conifigure db-connection details via deployment.yaml
+* Configure db-connection details via deployment.yaml
+* Configure for dev vs production style environments 
+* Test versioning / rolling-updates / rollback
+* Test db migrations
+* Helper script to kill pods and check resiliency
 * Tidy up project structure
