@@ -14,3 +14,14 @@ spec:
         image: simple-node-server:v1
         ports:
         - containerPort: 8080
+        env:
+        - name: DB_HOST
+          value: "cockroachdb-public"
+        - name: DB_PORT
+          value: "26257"
+        - name: DB_NAME
+          value: "kubetest"
+        - name: DB_USER
+          value: "kubetest"
+        - name: DB_PORT
+          value: ""
