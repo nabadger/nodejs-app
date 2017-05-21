@@ -3,11 +3,11 @@
 This is an example node.js http-server using the sequalize ORM talking to a 
 cockroach-db backend, within a kubernetes cluster.
 
-Aim is to learn how these technologies interact, specifically to try scaling
-and resiliency in a kubernetes cluster at both the both app and db-layer.
+Aim is to learn how these technologies interact, specifically to demo scaling
+and resiliency in a kubernetes cluster, at both app and db layer.
 
 At the moment requests to '/' insert database rows to a user table, then
-read them back out. Rows are deleted when the rowcount goes above 50 entries.
+read them back out. Rows are deleted when the row-count goes above 50 entries.
 
 # Useful links
 * https://nodejs.org/en/ 
@@ -27,7 +27,7 @@ I used this, and created an empty database 'kubetest' and a username 'kubetest'.
 
 Setup your kubernetes cluster and deploy cockroach-db.
 
-Use docker to build the image:
+For this app, use docker to build the image:
 
 ```
 docker build -t simple-node-server:v1 .
@@ -42,8 +42,10 @@ kubectl create -f kubernetes/service.yaml
 Now get the assigned NodePort:
 
 ```
-kubectl create -f kubernetes/deployment
+kubectl describe svc/simple-node-server
 ```
+
+You should be able to browse to this.
 
 # TODO
 
