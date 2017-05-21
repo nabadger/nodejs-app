@@ -59,5 +59,6 @@ Used for building the docker image and applying any kubernetes changes to the de
 # TODO
 * Test versioning / rolling-updates / rollback
 * Test db migrations
+* Add kind of storage layer to the mix such as Ceph
 * Helper script to kill pods and check resiliency
 * Tidy up project structure
