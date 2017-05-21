@@ -1,11 +1,16 @@
 FROM node:boron
 
+# Create app directory
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
+# Install dependencies
 COPY package.json /usr/src/app
 RUN npm install
-COPY server.js /usr/src/app
-EXPOSE 3000 
-CMD ["npm", "start"]
 
+# Add app-source
+COPY . /usr/src/app
+
+EXPOSE 8080
+ENV PORT 8080
+CMD ["npm", "start"]
