@@ -46,7 +46,7 @@ These are passed into the container as environment vars.
     value: "kubetest"
   - name: DB_USER
     value: "kubetest"
-  - name: DB_PORT
+  - name: DB_PASSWD
     value: ""
 ```
 
