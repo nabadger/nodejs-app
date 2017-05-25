@@ -12,6 +12,7 @@ spec:
       containers:
       - name: simple-node-server
         image: simple-node-server:v1
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
         env:
