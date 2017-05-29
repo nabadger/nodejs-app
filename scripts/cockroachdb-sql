@@ -1,0 +1,1 @@
+kubectl exec -ti cockroachdb-0 -- /cockroach/cockroach sql --host cockroachdb-0 --insecure -e "$sql_command;"

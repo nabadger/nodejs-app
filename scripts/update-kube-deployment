@@ -1,3 +1,6 @@
+kubectl exec -ti cockroachdb-0 -- /cockroach/cockroach sql --host cockroachdb-0 --insecure -e "CREATE DATABASE kubetest;"
+kubectl exec -ti cockroachdb-0 -- /cockroach/cockroach sql --host cockroachdb-0 --insecure -e "GRANT ALL PRIVILEGES ON kubetest TO kubetest;"
+
 APP_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../" && pwd )"
 cd $APP_ROOT
 kubectl apply -f ./kubernetes/deployment.yaml
