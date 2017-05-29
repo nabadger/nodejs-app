@@ -1,5 +1,6 @@
-kubectl exec -ti cockroachdb-0 -- /cockroach/cockroach sql --host cockroachdb-0 --insecure -e "CREATE DATABASE kubetest;"
-kubectl exec -ti cockroachdb-0 -- /cockroach/cockroach sql --host cockroachdb-0 --insecure -e "GRANT ALL PRIVILEGES ON kubetest TO kubetest;"
+kubectl exec -ti cockroachdb-0 -- /cockroach/cockroach sql --host cockroachdb-0 --insecure -e "CREATE DATABASE IF NOT EXISTS kubetest;"
+sleep 1
+kubectl exec -ti cockroachdb-0 -- /cockroach/cockroach sql --host cockroachdb-0 --insecure -e "SET DATABASE TO kubetest; GRANT ALL ON DATABASE kubetest TO kubetest;"
 
 APP_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../" && pwd )"
 cd $APP_ROOT
