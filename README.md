@@ -1,7 +1,8 @@
-# Node.js / Cockroachdb
+# Node.js App
 
-This is an example node.js http-server using the sequalize ORM talking to a 
-cockroach-db backend
+This is an example node.js http-server using the sequalize ORM.
+
+I've tested this in a kuberentes stack with a cockroack-db backend.
 
 Aim is to learn how these technologies interact, specifically to demo scaling
 and resiliency in a kubernetes cluster, at both app and db layer.
@@ -18,8 +19,7 @@ read them back out. Rows are deleted when the row-count goes above 50 entries.
 * https://groundberry.github.io/development/2016/11/04/build-your-node-app-with-express-and-sequelize.html
 
 ## Prerequisites
-A cockroachdb install
-Setup an empty database 'kubetest' and a username 'kubetest'.
+A database install - configure environemt settings below.
 
 ## Getting Started
 ```
