@@ -28,17 +28,12 @@ docker pull nabadger/nodejs-app
 
 ## Database connection details
 
-Database info. needs to besupplied via the environment.
+Database info. needs to be supplied via the environment.
 
  env:
   - name: DB_HOST
-    value: "cockroachdb-public"
   - name: DB_PORT
-    value: "26257"
   - name: DB_NAME
-    value: "kubetest"
   - name: DB_USER
-    value: "kubetest"
   - name: DB_PASSWD
-    value: ""
 ```
