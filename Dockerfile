@@ -11,6 +11,6 @@ RUN npm install
 # Add app-source
 COPY . /usr/src/app
 
-EXPOSE 80
-ENV PORT 80
+EXPOSE 8080
+ENV PORT 8080
 CMD ["npm", "start"]
