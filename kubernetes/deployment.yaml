@@ -17,12 +17,12 @@ spec:
         - containerPort: 8080
         env:
         - name: DB_HOST
-          value: "cockroachdb-public"
+          value: ""
         - name: DB_PORT
-          value: "26257"
+          value: ""
         - name: DB_NAME
-          value: "kubetest"
+          value: ""
         - name: DB_USER
-          value: "kubetest"
+          value: ""
         - name: DB_PASSWD
           value: ""
