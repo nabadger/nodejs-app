@@ -2,7 +2,7 @@
 
 This is an example node.js http-server using the sequalize ORM.
 
-I've tested this in a kuberentes stack with a cockroack-db backend.
+There's a couple of kubernetes deployment files too.
 
 Aim is to learn how these technologies interact, specifically to demo scaling
 and resiliency in a kubernetes cluster, at both app and db layer.
